@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.app-container{
+  padding: 4rem 0;
+  background-color: black;
+}
+.app-header{
+
+}
+.app-header__title{
+  text-align: center;
+  color: #e4ddcf;
+  margin-bottom: 3rem;
+}
+.app-main{
+  margin: 3rem 0;
+}
