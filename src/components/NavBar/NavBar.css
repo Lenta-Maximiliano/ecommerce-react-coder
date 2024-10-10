@@ -9,6 +9,14 @@
   align-items: center;
   padding: 0 2rem;
 }
+.navbar-logo-container{
+  display: flex;
+  align-items: center;
+}
+.navbar-logo{
+  height: 3rem;
+  border-radius: 50%;
+}
 .navbar-links {
   display: flex; /* Mostrar enlaces en fila en pantallas grandes */
   font-size: 1.4rem;

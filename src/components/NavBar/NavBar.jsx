@@ -1,9 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import CartWidget from './CartWidget/CartWidget';
+import logo from '/logo.png'
 import './NavBar.css'
 
 export default function NavBar () {
-
   const [selectedCategory, setSelectedCategory] = useState(null);
   const location = useLocation();
   
@@ -15,9 +16,14 @@ export default function NavBar () {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div>
-          <h1 className="navbar-logo">Mi Logo</h1>
-        </div>
+        <Link to="/">
+          <div className="navbar-logo-container">
+            <img 
+              src={logo}
+              alt="imagen logo" 
+              className="navbar-logo" />
+          </div>
+        </Link>
         <div className="navbar-links">
           <ul>
             <li>
@@ -54,8 +60,8 @@ export default function NavBar () {
             </li>
           </ul>
         </div>
-        <div>
-        <h1 className="navbar-logo">Mi carro</h1>
+        <div className="navbar-logo-container">
+          <CartWidget />
         </div>
       </div>
     </nav>
