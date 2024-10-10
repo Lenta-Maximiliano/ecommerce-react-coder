@@ -3,6 +3,7 @@ import { CartProvider } from './context/CartContext';
 import ItemListContainer from './components/View/ItemListView/ItemListContainer'
 import NavBar from './components/NavBar/NavBar';
 import './App.css'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
               <Route path="/" element={<ItemListContainer />} />
             </Routes>
           </main>
+          <footer className='app-footer'>
+            <Footer />
+          </footer>
         </div>
       </CartProvider>
     </BrowserRouter>
