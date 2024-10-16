@@ -5,6 +5,7 @@
 .app-container{
   padding: 1.5rem 0;
   background-color: black;
+  min-width: 400px;
 }
 .app-header{
 

@@ -53,8 +53,14 @@
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+  .navbar__link {
+    display: block;
+    text-align: center;
+  }
   .navbar-links {
     display: block; /* Mostrar enlaces en bloque en pantallas pequeñas */
+    width: 50%;
+    min-width: 200px;
   }
 
   .navbar-links ul {
