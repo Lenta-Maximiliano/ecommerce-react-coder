@@ -3,7 +3,7 @@ import app from '../../../firebaseConfig'
 import { getFirestore, collection, query, where, getDocs } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
 import ReactLoading from 'react-loading';
-import ProductsCard from './ProductsCard/ProductsCard';
+import ProductsCard from '../../ProductsCard/ProductsCard';
 import './ItemListContainer.css';
 
 export default function ItemListContainer() {
