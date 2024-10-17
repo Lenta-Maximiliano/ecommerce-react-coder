@@ -17,6 +17,7 @@ function App() {
           <main className='app-main'>
             <Routes>
               <Route path="/" element={<ItemListContainer />} />
+              <Route path="/category/:categoryId" element={<ItemListContainer />} />
             </Routes>
           </main>
           <footer className='app-footer'>
