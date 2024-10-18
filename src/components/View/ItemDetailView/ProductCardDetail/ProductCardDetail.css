@@ -1,0 +1,91 @@
+.item-detail{
+  color: white;
+  width: 25%;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+}
+.item-detail__title{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.item-detail__image{
+  width: 100%;
+}
+.item-detail__info{
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.item-detail__info p{
+  margin: 0.5rem 0;
+}
+.item-detail__info p span{
+  font-weight: 800;
+}
+.item-detail__buy-button{
+  display: flex;
+  margin: 1.5rem auto 0;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+}
+
+/* Estilos para pantallas grandes (mayor o igual a 768px) */
+@media (min-width: 768px) {
+  .item-detail {
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: auto;
+    column-gap: 6rem; /* Espaciado entre los elementos */
+    padding: 2rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .item-detail__image {
+    grid-column: 1; /* Coloca la imagen en la primera columna */
+    grid-row: 1 / span 4; /* Ocupa dos filas */
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex; /* Habilita flexbox para centrar la imagen */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  }
+
+  .item-detail__info {
+    grid-column: 2; /* Coloca la información en la segunda columna */
+    grid-row: 2; /* Ocupa dos filas */
+    text-align: center; /* Alinea el texto a la izquierda */
+    row-gap: 0.8rem;
+  }
+
+  .item-detail__title {
+    grid-column: 2; /* Coloca la imagen en la primera columna */
+    grid-row: 1; /* Ocupa dos filas */
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .item-detail__buy-section {
+    grid-column: 2; /* Mantiene la sección de compra en la segunda columna */
+    grid-row: 4; /* La coloca en la fila 3 */
+  }
+
+  .contador{
+    grid-column: 2; /* Mantiene la sección de compra en la segunda columna */
+    grid-row: 3; /* La coloca en la fila 3 */
+    margin-top: 0;
+    align-self: center;
+  }
+}

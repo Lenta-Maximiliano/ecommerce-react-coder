@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './ProductsCard.css'
+import './ProductsCardList.css'
 
 export default function ProductsCard ({image, title, price, itemId}) {
 

@@ -1,0 +1,22 @@
+.quantity-counter__container{
+  width: 50%;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.quantity-counter__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.quantity-counter__number{
+  font-weight: bold;
+  font-size: 1.4rem;
+}
