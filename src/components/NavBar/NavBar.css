@@ -52,7 +52,7 @@
 }
 
 /* Estilos responsivos */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar__link {
     display: block;
     text-align: center;
