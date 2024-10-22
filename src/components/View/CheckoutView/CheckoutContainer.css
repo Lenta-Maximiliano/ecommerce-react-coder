@@ -8,7 +8,7 @@
   text-align: center;
   color: white;
 }
-.checkout-item{
+/* .checkout-item{
   border: 1px solid white;
   width: 50%;
   height: 100px;
@@ -41,7 +41,7 @@
 }
 .checkout-item-remove-button:hover{
   background-color: #e4ddcf;
-}
+} */
 .checkout-total{
   color: white;
   align-items: center;

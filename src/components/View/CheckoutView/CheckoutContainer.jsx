@@ -1,15 +1,16 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../../context/CartContext';
+import ProductCardCheckout from './ProductCardCheckout/ProductCardCheckout'
 // import UserInfo from '../../UserInfo/UserInfo';
 import './CheckoutContainer.css';
 
 export default function CheckoutContainer() {
   const { cart, clear, removeItem, createNewOrder } = useContext(CartContext);
 
-  const handleClickRemoveItem = (id) => {
-    removeItem(id);
-  };
+  // const handleClickRemoveItem = (id) => {
+  //   removeItem(id);
+  // };
 
   const handleClickClear = () => {
     clear();
@@ -21,7 +22,8 @@ export default function CheckoutContainer() {
         <>
           <h1 className='checkout-title'>Carrito de Compras</h1>
 
-          {cart.map((prod) => {
+          <ProductCardCheckout />
+          {/* {cart.map((prod) => {
             const precioTotalItem = prod.price * prod.quantity;
             return (
               <article className='checkout-item' key={prod.id}>
@@ -45,7 +47,7 @@ export default function CheckoutContainer() {
                 </div>
               </article>
             );
-          })}
+          })} */}
 
           <h2 className='checkout-total'>
             Total de la compra: ${cart.reduce((total, prod) => total + prod.price * prod.quantity, 0)}
