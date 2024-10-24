@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../../context/CartContext';
 import ProductCardCheckout from './ProductCardCheckout/ProductCardCheckout'
+import UserInfo from './UserInfo/UserInfo'
 // import UserInfo from '../../UserInfo/UserInfo';
 import './CheckoutContainer.css';
 
@@ -57,6 +58,7 @@ export default function CheckoutContainer() {
               Vaciar Carrito
             </button>
           </div>
+          <UserInfo />
           {/* <UserInfo cart={cart} createNewOrder={createNewOrder}/> */}
         </>
       ) : (

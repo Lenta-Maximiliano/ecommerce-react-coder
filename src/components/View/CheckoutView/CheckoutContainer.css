@@ -54,6 +54,7 @@
 .checkout-clear-cart-button{
   margin: 0 auto 20px;
   width: 20%;
+  min-width: 190px;
   padding: 15px;
   border-radius: 15px;
   font-weight: bold;
