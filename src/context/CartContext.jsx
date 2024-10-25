@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { processOrder } from '../services/orderService';
 
 export const CartContext = createContext();
 
@@ -24,8 +25,12 @@ export function CartProvider({ children }) {
 
   const clear = () => setCart([]);
 
+  const createNewOrder = async (order) => {
+    return await processOrder(order, clear);
+  };
+
   return (
-    <CartContext.Provider value={{ cart, setCart, addItem, clear, removeItem }}>
+    <CartContext.Provider value={{ cart, setCart, addItem, clear, removeItem, createNewOrder }}>
       {children}
     </CartContext.Provider>
   );
