@@ -6,7 +6,7 @@ import UserInfo from './UserInfo/UserInfo'
 import './CheckoutContainer.css';
 
 export default function CheckoutContainer() {
-  const { cart, clear, removeItem, createNewOrder } = useContext(CartContext);
+  const { cart, clear, createNewOrder } = useContext(CartContext);
 
   const handleClickClear = () => {
     clear();

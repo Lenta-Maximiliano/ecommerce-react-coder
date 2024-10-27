@@ -8,40 +8,6 @@
   text-align: center;
   color: white;
 }
-/* .checkout-item{
-  border: 1px solid white;
-  width: 50%;
-  height: 100px;
-  margin: 20px auto;
-  padding: 15px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-.checkout-item-image{
-  height: 100%;
-}
-.checkout-item-description{
-  width: 50%;
-  text-align: center;
-}
-.checkout-item-actions{
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-.checkout-item-remove-button{
-  cursor: pointer;
-  padding: 8px;
-  font-weight: bold;
-  border-radius: 15px;
-}
-.checkout-item-remove-button:hover{
-  background-color: #e4ddcf;
-} */
 .checkout-total{
   color: white;
   align-items: center;

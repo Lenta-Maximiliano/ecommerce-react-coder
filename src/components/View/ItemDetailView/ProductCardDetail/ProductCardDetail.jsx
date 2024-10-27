@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { CartContext } from '../../../../context/CartContext';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Contador from '../Contador/Contador'
 import './ProductCardDetail.css'
 
