@@ -33,6 +33,8 @@
 .checkout-empty-cart-message{
   color: white;
   margin-bottom: 30px;
+  text-align: center;
+  max-width: 80%;
 }
 .checkout-return-home-button{
   font-size: 20px;
