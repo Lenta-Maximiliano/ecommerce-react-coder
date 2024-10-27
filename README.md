@@ -30,7 +30,7 @@ Sigue estos pasos para instalar y correr el proyecto en tu entorno local:
 
 1. Clona el repositorio:
 ```
-git clone https://github.com/Lenta-Maximiliano/ecommerce-react-coder
+git clone https://github.com/Lenta-Maximiliano/ecommerce-react-coder.git
 ```
 2. Ingresa al directorio del proyecto:
 ```
