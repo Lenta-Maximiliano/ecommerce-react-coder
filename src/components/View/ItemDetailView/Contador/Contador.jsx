@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Contador.css';
 
 export default function Contador({ onQuantityChange, min = 1, max = 6 }) {
@@ -6,19 +6,19 @@ export default function Contador({ onQuantityChange, min = 1, max = 6 }) {
 
   const handleIncrement = () => {
     if (count < max) {
-      const newCount = count + 1;
-      setCount(newCount);
-      onQuantityChange && onQuantityChange(newCount);
+      setCount(prevCount => prevCount + 1);
     }
   };
 
   const handleDecrement = () => {
     if (count > min) {
-      const newCount = count - 1;
-      setCount(newCount);
-      onQuantityChange && onQuantityChange(newCount);
+      setCount(prevCount => prevCount - 1);
     }
   };
+
+  useEffect(() => {
+    onQuantityChange(count);
+  }, [count]);
 
   return (
     <div className="quantity-counter__container">
