@@ -1,0 +1,84 @@
+.navbar-links {
+  width: 50%;
+	min-width: 150px;
+  background-color: #847d84;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.navbar-links a:hover{
+  color: black;
+  background-color: #e0e0e0;
+}
+.navbar-menu-link{
+	border-radius: 1rem;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+.accordion-toggle {
+  color: white;
+  padding: 0.5rem;
+	border-radius: 1rem;
+  cursor: pointer;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.accordion-toggle:hover {
+	color: black;
+  background-color: #e0e0e0;
+}
+.selected {
+  background-color: #e0e0e0;
+  color: black;
+}
+.accordion-content {
+	margin-top: 0.5rem;
+	text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #847d84;
+  padding-left: 1rem;
+	visibility: hidden;
+}
+.accordion-content.open {
+  max-height: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	visibility: visible;
+}
+.accordion-content a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.accordion-toggle {
+		padding: 0.5rem 1.1rem;
+	}
+  .accordion-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-height: none;
+    visibility: visible;
+    opacity: 1;
+    transition: none;
+		margin-top: 0;
+  }
+	.navbar-links {
+		flex-direction: row;
+		width: 70%;
+		justify-content: space-between;
+	}
+	.accordion-content a{
+		padding: 0.5rem 1.1rem;
+	}
+	.navbar-menu-link{
+		padding: 0.5rem 1.1rem;
+	}
+}

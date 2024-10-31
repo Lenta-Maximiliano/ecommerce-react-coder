@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import CartWidget from './CartWidget/CartWidget';
 import logo from '/logo.png'
 import './NavBar.css'
+import AccordionMenu from './AccordionMenu/AccordionMenu';
 
 export default function NavBar () {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -24,42 +25,7 @@ export default function NavBar () {
               className="navbar-logo" />
           </div>
         </Link>
-        <div className="navbar-links">
-          <ul>
-            <li>
-              <Link 
-                to="/" 
-                className={`navbar__link ${!selectedCategory ? 'selected' : ''}`}
-              >
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/category/vinos"
-                className={`navbar__link ${selectedCategory === 'vinos' ? 'selected' : ''}`}
-              >
-                Vinos
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/category/cervezas"
-                className={`navbar__link ${selectedCategory === 'cervezas' ? 'selected' : ''}`}
-              >
-                Cervezas
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/category/sidras"
-                className={`navbar__link ${selectedCategory === 'sidras' ? 'selected' : ''}`}
-              >
-                Sidras
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <AccordionMenu />
         <div className="navbar-logo-container">
           <CartWidget />
         </div>

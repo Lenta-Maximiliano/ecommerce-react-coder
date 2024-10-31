@@ -51,7 +51,7 @@
   color: black;
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 767px) {
   .navbar__link {
     display: block;
@@ -62,11 +62,9 @@
     width: 50%;
     min-width: 200px;
   }
-
   .navbar-links ul {
     display: block;
   }
-
   .navbar-links ul li {
     margin: 0.5rem 0;
   }
